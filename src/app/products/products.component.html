@@ -1,0 +1,46 @@
+<div class="container">
+  <h1 class="display-2 text-center">Products</h1>
+  <div class="row">
+    <div class="col-lg-4">
+        <form novalidate (ngSubmit)="addProduct()" class="form" #myForm="ngForm">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Name" required [(ngModel)]="newProduct.name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="description" placeholder="Description" required [(ngModel)]="newProduct.description">
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input type="number" class="form-control" name="price" placeholder="Price" required [(ngModel)]="newProduct.price">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success btn-block mb-3" [disabled]="!myForm.form.valid">Add Product</button>
+        </form>
+    </div>
+    <div class="col-lg-8">
+      <div class="input-group">
+        <div class="input-group-prepend mb-3">
+          <span class="input-group-text">Filter by</span>
+        </div>
+        <input [(ngModel)]="productFilter" name="filter" class="form-control mb-3">
+      </div>
+      <table class="table border border-dark">
+        <thead class="bg-dark text-white">
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.price | currency}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
