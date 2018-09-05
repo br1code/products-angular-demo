@@ -1,27 +1,20 @@
 # ProductsAngularDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+## Practica Angular - NeorisLab 2018 - Br1code
+* Crear una aplicación angular en una carpeta específica usando angular CLI
+* Crear un crear un componente que tenga una lista de productos, y mostrarlos en una
+tabla en la vista, de forma que se muestren su nombre, descripción y el precio con
+formato adecuado.
+* Crear un servicio que me provea esa lista de productos, y usarlo en el componente
+anterior.
+* Crear un filtro que filtre la lista de productos por nombre
+* Crear un form que nos permita guardar un producto asociado al componente usando
+template driven forms. Validar campos requeridos, deshabilitando el botón del form y
+luego validarlo en la clase del componente y agregarlo a la lista de productos.
 
-## Development server
+### Para correr esta aplicación, ejecuten los siguientes comandos:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1) `git clone https://github.com/br1code/products-angular-demo.git`
+2) `cd products-angular-demo`
+3) `npm install`
+4) `ng serve -o`
