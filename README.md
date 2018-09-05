@@ -2,7 +2,7 @@
 
 ## Practica Angular - NeorisLab 2018 - Br1code
 * Crear una aplicación angular en una carpeta específica usando angular CLI
-* Crear un crear un componente que tenga una lista de productos, y mostrarlos en una
+* Crear un componente que tenga una lista de productos, y mostrarlos en una
 tabla en la vista, de forma que se muestren su nombre, descripción y el precio con
 formato adecuado.
 * Crear un servicio que me provea esa lista de productos, y usarlo en el componente
